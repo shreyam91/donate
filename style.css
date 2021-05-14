@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&family=Itim&family=Texturina:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 10px;
+    text-decoration: none;
+    font-family: 'Texturina', serif;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    /*right: -1050px;*/
+}
+/*-- banner --*/
+
+#banner{
+    background: linear-gradient(rgba(0,0,0,0.5),#ff80b3),url(4.jpg );
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.banner-text{
+    text-align: center;
+    color: white;
+    padding-top: 280px;
+}
+.banner-text h3{
+    font-size: 30px;
+    color: beige;
+    font-style: italic;
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 2px;
+}
+/*-- footer bottom ----*/
+#footer{
+    padding: 50px 0 10px;
+    background:linear-gradient(rgba(0,0,0,0.5),#40e36b),url(3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+.title-text h2{
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.contactForm{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid grey;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left:0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~span,
+.contactForm .inputBox input:valid ~span
+.contactForm .inputBox textarea:focus ~span,
+.contactForm .inputBox textarea:valid ~span{
+    color: black;
+    font-size: 20px;
+    transform: translateY(-30px);
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: darkblue;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.footer-bottom{
+    flex-basis: 45%;
+    padding: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-bottom h2{
+    font-family: 'Tangerine', cursive;
+    font-size: 55px;
+    font-weight: bolder;
+    color: blueviolet;
+    letter-spacing: 2px;
+}
+@media screen and (max-width: 770px){
+    .footer-bottom{
+        flex-basis: 100%;
+    }
+    .contactForm .inputBox{
+        flex-basis: 100%;
+    }
+}
+.social-links{
+    text-align: center;
+}
+.social-links .fa{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 2px solid blue;
+    margin: 2px 2px 0;
+    margin-top:auto;
+    color: red;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.social-links .fa:hover{
+    color: blue;
+    transform: translateY(-7px);
+}
+.social-links p{
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    font-weight: bold;
+} 
